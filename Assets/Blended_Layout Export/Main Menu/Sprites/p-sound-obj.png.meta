@@ -1,0 +1,620 @@
+fileFormatVersion: 2
+guid: 0da2a4e28d4a56149abc256fe7b9d9df
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 5706373391911848024
+    second: p-sound-obj_0
+  - first:
+      213: -5763206478412805950
+    second: p-sound-obj_1
+  - first:
+      213: 1211801050299575448
+    second: p-sound-obj_2
+  - first:
+      213: -6212713727994007626
+    second: p-sound-obj_3
+  - first:
+      213: -7052191675791823267
+    second: p-sound-obj_4
+  - first:
+      213: 6541385546505775484
+    second: p-sound-obj_5
+  - first:
+      213: -5622235854032287320
+    second: p-sound-obj_6
+  - first:
+      213: 3289787508669001120
+    second: p-sound-obj_7
+  - first:
+      213: 8802101049069684754
+    second: p-sound-obj_8
+  - first:
+      213: 6975655966714640684
+    second: p-sound-obj_9
+  - first:
+      213: 7143558860056085092
+    second: p-sound-obj_10
+  - first:
+      213: -8415789674830803420
+    second: p-sound-obj_11
+  - first:
+      213: 3192526875584079444
+    second: p-sound-obj_12
+  - first:
+      213: -3706111941588805012
+    second: p-sound-obj_13
+  - first:
+      213: 3622296780731566784
+    second: p-sound-obj_14
+  - first:
+      213: -6570275149989858697
+    second: p-sound-obj_15
+  - first:
+      213: 7595203006947941915
+    second: p-sound-obj_16
+  - first:
+      213: 3999279312327127282
+    second: p-sound-obj_17
+  - first:
+      213: 7383075102054406758
+    second: p-sound-obj_18
+  - first:
+      213: -5839018921387905578
+    second: p-sound-obj_19
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 1024
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 1024
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 1024
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 1024
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 1024
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: p-sound-obj_0
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 1936
+        width: 448
+        height: 442
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85885a4cd5c113f40800000000000000
+      internalID: 5706373391911848024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: p-sound-obj_1
+      rect:
+        serializedVersion: 2
+        x: 1012
+        y: 1956
+        width: 480
+        height: 401
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c889fe1e3af400b0800000000000000
+      internalID: -5763206478412805950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: p-sound-obj_2
+      rect:
+        serializedVersion: 2
+        x: 1823
+        y: 1936
+        width: 449
+        height: 442
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89c2d8582ae21d010800000000000000
+      internalID: 1211801050299575448
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: p-sound-obj_3
+      rect:
+        serializedVersion: 2
+        x: 2506
+        y: 1954
+        width: 469
+        height: 276
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6bf69bfd7c108c9a0800000000000000
+      internalID: -6212713727994007626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: p-sound-obj_4
+      rect:
+        serializedVersion: 2
+        x: 3235
+        y: 1975
+        width: 388
+        height: 362
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5e2674f805912e90800000000000000
+      internalID: -7052191675791823267
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: p-sound-obj_5
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 1383
+        width: 349
+        height: 348
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c79e95e2f7ba7ca50800000000000000
+      internalID: 6541385546505775484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: p-sound-obj_6
+      rect:
+        serializedVersion: 2
+        x: 946
+        y: 1439
+        width: 611
+        height: 238
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a9c0f4574ec9f1b0800000000000000
+      internalID: -5622235854032287320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: p-sound-obj_7
+      rect:
+        serializedVersion: 2
+        x: 1823
+        y: 1368
+        width: 447
+        height: 380
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0adabb02f4ca7ad20800000000000000
+      internalID: 3289787508669001120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: p-sound-obj_8
+      rect:
+        serializedVersion: 2
+        x: 2504
+        y: 1439
+        width: 405
+        height: 238
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21844e2c448572a70800000000000000
+      internalID: 8802101049069684754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: p-sound-obj_9
+      rect:
+        serializedVersion: 2
+        x: 3117
+        y: 1381
+        width: 625
+        height: 354
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c293c53a4228ec060800000000000000
+      internalID: 6975655966714640684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: p-sound-obj_10
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 755
+        width: 395
+        height: 375
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 462ccbd5fe4032360800000000000000
+      internalID: 7143558860056085092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: p-sound-obj_11
+      rect:
+        serializedVersion: 2
+        x: 1079
+        y: 745
+        width: 343
+        height: 396
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42e4f4721eb153b80800000000000000
+      internalID: -8415789674830803420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: p-sound-obj_12
+      rect:
+        serializedVersion: 2
+        x: 1835
+        y: 741
+        width: 423
+        height: 402
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 456a31357422e4c20800000000000000
+      internalID: 3192526875584079444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: p-sound-obj_13
+      rect:
+        serializedVersion: 2
+        x: 2542
+        y: 732
+        width: 330
+        height: 420
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6a14cf23de319cc0800000000000000
+      internalID: -3706111941588805012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: p-sound-obj_14
+      rect:
+        serializedVersion: 2
+        x: 3252
+        y: 745
+        width: 353
+        height: 394
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0cacb86fabbf44230800000000000000
+      internalID: 3622296780731566784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: p-sound-obj_15
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 175
+        width: 332
+        height: 330
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7723748df81b1d4a0800000000000000
+      internalID: -6570275149989858697
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: p-sound-obj_16
+      rect:
+        serializedVersion: 2
+        x: 940
+        y: 136
+        width: 623
+        height: 409
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1e5c1ac4e4976960800000000000000
+      internalID: 7595203006947941915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: p-sound-obj_17
+      rect:
+        serializedVersion: 2
+        x: 1814
+        y: 143
+        width: 465
+        height: 394
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f0b3d0785b408730800000000000000
+      internalID: 3999279312327127282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: p-sound-obj_18
+      rect:
+        serializedVersion: 2
+        x: 2573
+        y: 130
+        width: 269
+        height: 422
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66adbf720b3f57660800000000000000
+      internalID: 7383075102054406758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: p-sound-obj_19
+      rect:
+        serializedVersion: 2
+        x: 3196
+        y: 172
+        width: 465
+        height: 339
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6dda3e93a33a7fea0800000000000000
+      internalID: -5839018921387905578
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
