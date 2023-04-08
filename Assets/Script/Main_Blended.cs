@@ -73,6 +73,7 @@ public class Main_Blended : MonoBehaviour
 
     public string[] SLIDE_NAMES;
     public string[] TEACHER_INSTRUCTION;
+    public string[] ACTIVITY_INSTRUCTION;
     public bool[] HAS_VIDEO;
     public bool[] HAS_WORKSHEET;
 
