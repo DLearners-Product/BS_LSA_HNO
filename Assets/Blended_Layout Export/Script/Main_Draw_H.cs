@@ -137,9 +137,10 @@ public class Main_Draw_H : MonoBehaviour
                 sound.Play();
                 letter[1].SetActive(true);
                 number[4].SetActive(true);
+                number[5].SetActive(true);
                 collision.GetComponent<CircleCollider2D>().enabled = false;
             }
-            if (collision.gameObject.name == "5")
+            if (collision.gameObject.name == "6")
             {
                 sound.Play();
                 letter[2].SetActive(true);
@@ -147,6 +148,7 @@ public class Main_Draw_H : MonoBehaviour
                 AS_Empty.clip = AC_phonic;
                 AS_Empty.Play();
             }
+
         }
     }
 }
