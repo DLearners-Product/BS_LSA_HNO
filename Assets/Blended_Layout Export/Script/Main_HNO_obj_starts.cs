@@ -88,7 +88,7 @@ public class Main_HNO_obj_starts : MonoBehaviour
     }
     public void hideletter()
     {
-        if (firecount == 3)
+        if (firecount == 5)
         {
             Lettertohide.SetActive(false);
             Invoke("Function_firework", 1f);
@@ -106,14 +106,14 @@ public class Main_HNO_obj_starts : MonoBehaviour
     }
     public void batdefaultanim()
     {
-        if (firecount < 3)
+        if (firecount < 5)
         {
             bat.Play("Bat_Idle");
         }
         else
         {
             bat.Play("Bat_completed");
-            Invoke("completescreen", 100f * Time.deltaTime);
+            Invoke("completescreen", 2.5f);
          //   Main_Blended.OBJ_main_blended.PostDataToDB(STR_gamename, ObjStarts_listValues);
         }
     }

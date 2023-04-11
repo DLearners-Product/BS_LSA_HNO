@@ -115,7 +115,7 @@ public class FunPlay_Filling : MonoBehaviour
         click = true;
        // Main_Blended.OBJ_main_blended.PostDataToDB(STR_gamename, answer_name, FunPlay_listValues);
 
-        if (count < 4)
+        if (count < 5)
         {
             count++;
             for (int i = 0; i < questions.Length; i++)
