@@ -30,10 +30,16 @@ public class Main_HNO_obj_starts : MonoBehaviour
 
     public List<string> ObjStarts_listValues;
 
+#region  QA
+    public GameObject questionGO;
+    public GameObject[] optionsGO;
+    Component question;
+    Component[] options;
+#endregion
+
     // Start is called before the first frame update
     void Start()
     {
-
         G_final_screen.SetActive(false);
         STR_gamename = this.gameObject.name;
         // OBJ_main_selectedcorrectobj = this;
@@ -44,6 +50,20 @@ public class Main_HNO_obj_starts : MonoBehaviour
         }
         Lettertohide.SetActive(true);
         fireworks.SetActive(false);
+        Main_Blended.OBJ_main_blended.levelno = 4;
+        QAManager.instance.UpdateActivityQuestion();
+        AssignData();
+    }
+
+    void AssignData(){
+        question = QAManager.instance.GetQuestionAt(0, 0);
+        questionGO.GetComponent<Image>().sprite = question._sprite;
+
+        options = QAManager.instance.GetOption(0, 0);
+        for (int i=0; i< optionsGO.Length; i++)
+        {
+            optionsGO[i].GetComponent<Image>().sprite = options[i]._sprite;
+        }
     }
 
     public void Clicking()
