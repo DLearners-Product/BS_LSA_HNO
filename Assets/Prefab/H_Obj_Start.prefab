@@ -4923,6 +4923,16 @@ MonoBehaviour:
   wrong: {fileID: 9016291875118909854}
   G_final_screen: {fileID: 9016291875025574571}
   ObjStarts_listValues: []
+  questionGO: {fileID: 9016291876164187338}
+  optionsGO:
+  - {fileID: 9016291875465299959}
+  - {fileID: 9016291875008824508}
+  - {fileID: 9016291876294731998}
+  - {fileID: 9016291876248061155}
+  - {fileID: 9016291875394861085}
+  - {fileID: 9016291875224070942}
+  - {fileID: 9016291876224989203}
+  - {fileID: 9016291875202556915}
 --- !u!1 &9016291876224989203
 GameObject:
   m_ObjectHideFlags: 0
