@@ -121,6 +121,12 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &30450997 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6339642099624263821, guid: fad56fd3398545f4398d46c6748ffd39,
+    type: 3}
+  m_PrefabInstance: {fileID: 2614458269993966046}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &42575878
 GameObject:
   m_ObjectHideFlags: 0
@@ -493,6 +499,12 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 129048956}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &157561835 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6339642099418174734, guid: fad56fd3398545f4398d46c6748ffd39,
+    type: 3}
+  m_PrefabInstance: {fileID: 2614458269993966046}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &167050100
 GameObject:
   m_ObjectHideFlags: 0
@@ -771,6 +783,12 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 209248607}
   m_CullTransparentMesh: 0
+--- !u!1 &216310564 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6339642101000110117, guid: fad56fd3398545f4398d46c6748ffd39,
+    type: 3}
+  m_PrefabInstance: {fileID: 2614458269993966046}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &249270831 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6339642099939068870, guid: fad56fd3398545f4398d46c6748ffd39,
@@ -1367,7 +1385,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1964373507}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -1386,6 +1404,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0d88b8709bdab784abaec514c2a5ec19, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &579444393 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6339642099609345054, guid: fad56fd3398545f4398d46c6748ffd39,
+    type: 3}
+  m_PrefabInstance: {fileID: 2614458269993966046}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &589035772
 GameObject:
   m_ObjectHideFlags: 0
@@ -1983,6 +2007,12 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &835495145 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6339642100381826043, guid: fad56fd3398545f4398d46c6748ffd39,
+    type: 3}
+  m_PrefabInstance: {fileID: 2614458269993966046}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &848748287
 GameObject:
   m_ObjectHideFlags: 0
@@ -2057,6 +2087,12 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 848748287}
   m_CullTransparentMesh: 0
+--- !u!1 &859092716 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6339642099898130789, guid: fad56fd3398545f4398d46c6748ffd39,
+    type: 3}
+  m_PrefabInstance: {fileID: 2614458269993966046}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &862246006 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8336872194796554748, guid: 66ede0031191d8649a73545735b0c7dd,
@@ -3863,7 +3899,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1964373507}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -3884,20 +3920,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   activityContents:
   - slideNo: 4
-    activityName: H Object Start
+    activityName: 
     questionType: 2
     staticQA:
-      questionType: 2
-      optionType: 2
-      questions:
-      - question:
-          id: 0
-          text: Smal h
-          _sprite: {fileID: 21300000, guid: 717e0b0ccaffd43cb9f6ce91b02651d0, type: 3}
-          audioClip: {fileID: 0}
-          width: 303
-          height: 512
-        answers: []
+      questionType: 0
+      optionType: 0
+      questions: []
       options: []
       additionalFields: []
     dynamicQA:
@@ -3905,114 +3933,59 @@ MonoBehaviour:
       optionType: 2
       questions:
       - question:
-          id: 0
+          id: 1
           text: H
           _sprite: {fileID: 21300000, guid: 717e0b0ccaffd43cb9f6ce91b02651d0, type: 3}
-          audioClip: {fileID: 0}
-          width: 303
-          height: 512
-        answers:
-        - id: 0
-          text: Hen
-          _sprite: {fileID: 21300000, guid: dfcae8ae7991d4f07b29dee3d0d81b87, type: 3}
-          audioClip: {fileID: 0}
-          width: 512
-          height: 512
-        - id: 0
-          text: Hamamer
-          _sprite: {fileID: 21300000, guid: 7f637c105b3ab417e9e48599605aaea8, type: 3}
-          audioClip: {fileID: 0}
-          width: 512
-          height: 243
-        - id: 0
-          text: Horse
-          _sprite: {fileID: 21300000, guid: b8d68a8fc847a4ae08fe32ddc3a5c81a, type: 3}
-          audioClip: {fileID: 0}
-          width: 512
-          height: 419
-        - id: 0
-          text: House
-          _sprite: {fileID: 21300000, guid: 5c4265d532f4bc94a9e03789a0dc87f8, type: 3}
-          audioClip: {fileID: 0}
-          width: 500
-          height: 500
-        - id: 0
-          text: Hand
-          _sprite: {fileID: 21300000, guid: 3a24b7ef053dc4d3d9c2348ca0dfdd14, type: 3}
-          audioClip: {fileID: 0}
-          width: 420
-          height: 512
-        - id: 0
-          text: Helicopter
-          _sprite: {fileID: 21300000, guid: 5d7c67f0f55e846fea5bebf8ca83c426, type: 3}
-          audioClip: {fileID: 0}
-          width: 512
-          height: 210
+          audioClip: {fileID: 8300000, guid: 584c7fba1a6c146fdb7567428383e5b0, type: 3}
         options:
-        - id: 0
-          text: 
+        - id: 10
+          text: hen
           _sprite: {fileID: 21300000, guid: dfcae8ae7991d4f07b29dee3d0d81b87, type: 3}
-          audioClip: {fileID: 0}
-          width: 512
-          height: 512
-        - id: 0
-          text: 
+          audioClip: {fileID: 8300000, guid: 72e94772d43604f4d8358b2be8227521, type: 3}
+          isAnswer: 1
+        - id: 11
+          text: hammer
           _sprite: {fileID: 21300000, guid: 7f637c105b3ab417e9e48599605aaea8, type: 3}
-          audioClip: {fileID: 0}
-          width: 512
-          height: 243
-        - id: 0
-          text: 
+          audioClip: {fileID: 8300000, guid: 1229ef3e5e51848b8bb9bb5b76fa4d36, type: 3}
+          isAnswer: 1
+        - id: 12
+          text: sunflower
           _sprite: {fileID: 21300000, guid: fc3f60b02f11d4a41b791bc472c1082c, type: 3}
           audioClip: {fileID: 0}
-          width: 158
-          height: 512
-        - id: 0
-          text: Hammer
+          isAnswer: 0
+        - id: 13
+          text: horse
           _sprite: {fileID: 21300000, guid: b8d68a8fc847a4ae08fe32ddc3a5c81a, type: 3}
-          audioClip: {fileID: 0}
-          width: 512
-          height: 419
-        - id: 0
-          text: House
+          audioClip: {fileID: 8300000, guid: 323802f6da0e148488bac877269a6cdd, type: 3}
+          isAnswer: 1
+        - id: 14
+          text: house
           _sprite: {fileID: 21300000, guid: 5c4265d532f4bc94a9e03789a0dc87f8, type: 3}
-          audioClip: {fileID: 0}
-          width: 500
-          height: 500
-        - id: 0
-          text: Hand
+          audioClip: {fileID: 8300000, guid: 2c2275fae7ead1b46b056e98f1fd3ddb, type: 3}
+          isAnswer: 1
+        - id: 15
+          text: hand
           _sprite: {fileID: 21300000, guid: 3a24b7ef053dc4d3d9c2348ca0dfdd14, type: 3}
-          audioClip: {fileID: 0}
-          width: 420
-          height: 512
-        - id: 0
-          text: Apple
+          audioClip: {fileID: 8300000, guid: b2583d3af8b9c4f16818b5b1087ccc10, type: 3}
+          isAnswer: 1
+        - id: 16
+          text: apple
           _sprite: {fileID: 21300000, guid: 4948b04cf805d4b28b06dc87e8916de6, type: 3}
           audioClip: {fileID: 0}
-          width: 427
-          height: 512
-        - id: 0
-          text: Helicopter
+          isAnswer: 0
+        - id: 17
+          text: helicopter
           _sprite: {fileID: 21300000, guid: 5d7c67f0f55e846fea5bebf8ca83c426, type: 3}
-          audioClip: {fileID: 0}
-          width: 512
-          height: 210
+          audioClip: {fileID: 8300000, guid: b7b43d756729f4a13bafe9d3ed9465b5, type: 3}
+          isAnswer: 1
       additionalFields: []
-  - slideNo: 4
-    activityName: H Object Start
-    questionType: 1
+  - slideNo: 17
+    activityName: 
+    questionType: 2
     staticQA:
-      questionType: 2
-      optionType: 2
-      questions:
-      - question:
-          id: 0
-          text: Smal h
-          _sprite: {fileID: 21300000, guid: 717e0b0ccaffd43cb9f6ce91b02651d0, type: 3}
-          audioClip: {fileID: 0}
-          width: 303
-          height: 512
-        answers: []
+      questionType: 0
+      optionType: 0
+      questions: []
       options: []
       additionalFields: []
     dynamicQA:
@@ -4020,98 +3993,111 @@ MonoBehaviour:
       optionType: 2
       questions:
       - question:
-          id: 0
-          text: H
-          _sprite: {fileID: 21300000, guid: 717e0b0ccaffd43cb9f6ce91b02651d0, type: 3}
-          audioClip: {fileID: 0}
-          width: 303
-          height: 512
-        answers:
-        - id: 0
-          text: Hen
-          _sprite: {fileID: 21300000, guid: dfcae8ae7991d4f07b29dee3d0d81b87, type: 3}
-          audioClip: {fileID: 0}
-          width: 512
-          height: 512
-        - id: 0
-          text: Hamamer
-          _sprite: {fileID: 21300000, guid: 7f637c105b3ab417e9e48599605aaea8, type: 3}
-          audioClip: {fileID: 0}
-          width: 512
-          height: 243
-        - id: 0
-          text: Horse
-          _sprite: {fileID: 21300000, guid: b8d68a8fc847a4ae08fe32ddc3a5c81a, type: 3}
-          audioClip: {fileID: 0}
-          width: 512
-          height: 419
-        - id: 0
-          text: House
-          _sprite: {fileID: 21300000, guid: 5c4265d532f4bc94a9e03789a0dc87f8, type: 3}
-          audioClip: {fileID: 0}
-          width: 500
-          height: 500
-        - id: 0
-          text: Hand
-          _sprite: {fileID: 21300000, guid: 3a24b7ef053dc4d3d9c2348ca0dfdd14, type: 3}
-          audioClip: {fileID: 0}
-          width: 420
-          height: 512
-        - id: 0
-          text: Helicopter
-          _sprite: {fileID: 21300000, guid: 5d7c67f0f55e846fea5bebf8ca83c426, type: 3}
-          audioClip: {fileID: 0}
-          width: 512
-          height: 210
+          id: 2
+          text: O
+          _sprite: {fileID: 21300000, guid: 7385197a0e3c04d4697f4b28e1c8fd05, type: 3}
+          audioClip: {fileID: 8300000, guid: 57ad72c5fe83f46f8831b85c5b1e14e0, type: 3}
         options:
-        - id: 0
-          text: 
-          _sprite: {fileID: 21300000, guid: dfcae8ae7991d4f07b29dee3d0d81b87, type: 3}
+        - id: 10
+          text: octagon
+          _sprite: {fileID: 21300000, guid: 96c9c5b7f2e0ffa4c93913f7ebab037d, type: 3}
+          audioClip: {fileID: 8300000, guid: a83e4bf2b3fe1ab4eb3ad26a6d3135b0, type: 3}
+          isAnswer: 1
+        - id: 11
+          text: octobus
+          _sprite: {fileID: 21300000, guid: e319e53a256ce49c3b5a5e8411d71359, type: 3}
+          audioClip: {fileID: 8300000, guid: 08fc2e7f8cc1b426fa497b1cf540c5e8, type: 3}
+          isAnswer: 1
+        - id: 12
+          text: teddy
+          _sprite: {fileID: 21300000, guid: 36bcf12b07253c24181f06007f2ca308, type: 3}
           audioClip: {fileID: 0}
-          width: 512
-          height: 512
-        - id: 0
-          text: 
-          _sprite: {fileID: 21300000, guid: 7f637c105b3ab417e9e48599605aaea8, type: 3}
+          isAnswer: 0
+        - id: 13
+          text: otter
+          _sprite: {fileID: 21300000, guid: 1cb03f6c6d5738241b7252bd3f88ddde, type: 3}
+          audioClip: {fileID: 8300000, guid: e6734259f544c1943b99078db9b8c2a4, type: 3}
+          isAnswer: 1
+        - id: 14
+          text: dog
+          _sprite: {fileID: 21300000, guid: 0f003184c13334138bbf69832a3eb98a, type: 3}
           audioClip: {fileID: 0}
-          width: 512
-          height: 243
-        - id: 0
-          text: 
-          _sprite: {fileID: 21300000, guid: fc3f60b02f11d4a41b791bc472c1082c, type: 3}
+          isAnswer: 0
+        - id: 15
+          text: olive
+          _sprite: {fileID: 21300000, guid: ea25dc8d28efc864d808138ca38dd922, type: 3}
+          audioClip: {fileID: 8300000, guid: 21f64d1549f1c9b4c9d736b74235e852, type: 3}
+          isAnswer: 1
+        - id: 16
+          text: office
+          _sprite: {fileID: 21300000, guid: 540beb3f89c311949a81330af5b942b5, type: 3}
+          audioClip: {fileID: 8300000, guid: 88bd5f42d904fec4c86169b53dd191d5, type: 3}
+          isAnswer: 1
+        - id: 17
+          text: orange
+          _sprite: {fileID: 21300000, guid: 4430b6aa33c17494eacbf66bd7a2afb2, type: 3}
+          audioClip: {fileID: 8300000, guid: 5a1f7fe47848d4b9a83a8042fce28050, type: 3}
+          isAnswer: 1
+      additionalFields: []
+  - slideNo: 11
+    activityName: 
+    questionType: 2
+    staticQA:
+      questionType: 0
+      optionType: 0
+      questions: []
+      options: []
+      additionalFields: []
+    dynamicQA:
+      questionType: 2
+      optionType: 2
+      questions:
+      - question:
+          id: 1
+          text: n
+          _sprite: {fileID: 21300000, guid: 786ea29b783f24aecac07ee3f3c2f0d3, type: 3}
+          audioClip: {fileID: 8300000, guid: 5ef351ce2c48c43c7b39880b7ef62763, type: 3}
+        options:
+        - id: 10
+          text: bricks
+          _sprite: {fileID: 21300000, guid: 9dcb96b922c6ca748b2c895831c73bcd, type: 3}
+          audioClip: {fileID: 8300000, guid: a83e4bf2b3fe1ab4eb3ad26a6d3135b0, type: 3}
+          isAnswer: 0
+        - id: 11
+          text: queen
+          _sprite: {fileID: 21300000, guid: e3db7e53713630c409f95449a1c0f264, type: 3}
+          audioClip: {fileID: 8300000, guid: 3ba1e06a2541a224ead3815f34db6523, type: 3}
+          isAnswer: 1
+        - id: 12
+          text: clown
+          _sprite: {fileID: 21300000, guid: 4b0b9b0df8cf63b4184c403dec7aeea4, type: 3}
+          audioClip: {fileID: 8300000, guid: ed6313140e5566c4a887377c59b4223d, type: 3}
+          isAnswer: 1
+        - id: 13
+          text: lion
+          _sprite: {fileID: 21300000, guid: 3d8a55e3e9825e942bee47d3b56e4d8d, type: 3}
+          audioClip: {fileID: 8300000, guid: 4b2ef8272000b134bad3523cdcc914bb, type: 3}
+          isAnswer: 1
+        - id: 14
+          text: door
+          _sprite: {fileID: 21300000, guid: 914864e35a0a45f40a38b0c07edd6c7b, type: 3}
           audioClip: {fileID: 0}
-          width: 158
-          height: 512
-        - id: 0
-          text: Hammer
-          _sprite: {fileID: 21300000, guid: b8d68a8fc847a4ae08fe32ddc3a5c81a, type: 3}
-          audioClip: {fileID: 0}
-          width: 512
-          height: 419
-        - id: 0
-          text: House
-          _sprite: {fileID: 21300000, guid: 5c4265d532f4bc94a9e03789a0dc87f8, type: 3}
-          audioClip: {fileID: 0}
-          width: 500
-          height: 500
-        - id: 0
-          text: Hand
-          _sprite: {fileID: 21300000, guid: 3a24b7ef053dc4d3d9c2348ca0dfdd14, type: 3}
-          audioClip: {fileID: 0}
-          width: 420
-          height: 512
-        - id: 0
-          text: Apple
-          _sprite: {fileID: 21300000, guid: 4948b04cf805d4b28b06dc87e8916de6, type: 3}
-          audioClip: {fileID: 0}
-          width: 427
-          height: 512
-        - id: 0
-          text: Helicopter
-          _sprite: {fileID: 21300000, guid: 5d7c67f0f55e846fea5bebf8ca83c426, type: 3}
-          audioClip: {fileID: 0}
-          width: 512
-          height: 210
+          isAnswer: 0
+        - id: 15
+          text: lemon
+          _sprite: {fileID: 21300000, guid: cdc0f3e5c180dcc408134b0c11e73603, type: 3}
+          audioClip: {fileID: 8300000, guid: a8f1918ea5f046240a4e6bc986fe31c6, type: 3}
+          isAnswer: 1
+        - id: 16
+          text: brain
+          _sprite: {fileID: 21300000, guid: 4c3b0c9cb01a1ae43a90f845fd30555a, type: 3}
+          audioClip: {fileID: 8300000, guid: 4d0d1f96b935b1142afe678651ec82ff, type: 3}
+          isAnswer: 1
+        - id: 17
+          text: moon
+          _sprite: {fileID: 21300000, guid: 0157583b0cea4414e8da9c01870a9dad, type: 3}
+          audioClip: {fileID: 8300000, guid: 56f6ca070a0ef6442aaea4e211e2c0ec, type: 3}
+          isAnswer: 1
       additionalFields: []
 --- !u!1001 &1592854916
 PrefabInstance:
@@ -5179,6 +5165,12 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 759932990}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1887059687 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6339642100181356081, guid: fad56fd3398545f4398d46c6748ffd39,
+    type: 3}
+  m_PrefabInstance: {fileID: 2614458269993966046}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1964373506
 GameObject:
   m_ObjectHideFlags: 0
@@ -5207,9 +5199,9 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1602302883}
-  - {fileID: 1969522792}
   - {fileID: 1583207398}
   - {fileID: 551086663}
+  - {fileID: 1969522792}
   m_Father: {fileID: 2067067671}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -5247,7 +5239,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1964373507}
-  m_RootOrder: 1
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -5273,6 +5265,12 @@ RectTransform:
     type: 3}
   m_PrefabInstance: {fileID: 1405666119}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1983895042 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6339642099638988261, guid: fad56fd3398545f4398d46c6748ffd39,
+    type: 3}
+  m_PrefabInstance: {fileID: 2614458269993966046}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2067067667
 GameObject:
   m_ObjectHideFlags: 0
@@ -5287,6 +5285,7 @@ GameObject:
   - component: {fileID: 2067067668}
   - component: {fileID: 2067067674}
   - component: {fileID: 2067067673}
+  - component: {fileID: 2067067677}
   - component: {fileID: 2067067672}
   - component: {fileID: 2067067676}
   - component: {fileID: 2067067675}
@@ -5389,14 +5388,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 2067067667}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2b133d111820cef4babf2d472e87f667, type: 3}
+  m_Script: {fileID: 11500000, guid: 722ad50754b63f748a1c4643eacc2aea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  slide_name: []
-  slideInst: []
-  videoSlides: []
-  worksheetSlides: []
-  gameName: 
 --- !u!114 &2067067673
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5584,10 +5578,10 @@ MonoBehaviour:
   - 
   HAS_VIDEO: 000000000000000000000000000000000000000000
   HAS_WORKSHEET: 000000000000000000000000000000000000000000
-  HAS_SYLLABLE: 
-  HAS_GRAMMER: 
-  HAS_ACTIVITY: 
-  IS_MANUAL_ACTIVITY: 
+  HAS_SYLLABLE: 000000000000000000000000000000000000000000
+  HAS_GRAMMER: 000000000000000000000000000000000000000000
+  HAS_ACTIVITY: 000000000000000000000000000000000000000000
+  IS_MANUAL_ACTIVITY: 000000000000000000000000000000000000000000
   ImmersiveObjects: []
   BG: {fileID: 0}
   VoiceNumber: 1
@@ -5753,6 +5747,25 @@ MonoBehaviour:
   isDontDestroyOnLoad: 0
   isFullDebugLogIfError: 1
   apiKey: AIzaSyDvWMi6kbfBWEUF3inJKvdMvIjWgGdW6Ms
+--- !u!114 &2067067677
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2067067667}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e9a7183f638cff49944b46b8057c93b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bridge: {fileID: 2067067672}
+--- !u!1 &2105233358 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6339642101328553943, guid: fad56fd3398545f4398d46c6748ffd39,
+    type: 3}
+  m_PrefabInstance: {fileID: 2614458269993966046}
+  m_PrefabAsset: {fileID: 0}
 --- !u!224 &2558406646101126992
 RectTransform:
   m_ObjectHideFlags: 0
@@ -6056,6 +6069,56 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2996115347935437161}
     m_Modifications:
+    - target: {fileID: 6339642099939068868, guid: fad56fd3398545f4398d46c6748ffd39,
+        type: 3}
+      propertyPath: optionsGO.Array.size
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 6339642099939068868, guid: fad56fd3398545f4398d46c6748ffd39,
+        type: 3}
+      propertyPath: questionGO
+      value: 
+      objectReference: {fileID: 157561835}
+    - target: {fileID: 6339642099939068868, guid: fad56fd3398545f4398d46c6748ffd39,
+        type: 3}
+      propertyPath: optionsGO.Array.data[0]
+      value: 
+      objectReference: {fileID: 1887059687}
+    - target: {fileID: 6339642099939068868, guid: fad56fd3398545f4398d46c6748ffd39,
+        type: 3}
+      propertyPath: optionsGO.Array.data[1]
+      value: 
+      objectReference: {fileID: 216310564}
+    - target: {fileID: 6339642099939068868, guid: fad56fd3398545f4398d46c6748ffd39,
+        type: 3}
+      propertyPath: optionsGO.Array.data[2]
+      value: 
+      objectReference: {fileID: 859092716}
+    - target: {fileID: 6339642099939068868, guid: fad56fd3398545f4398d46c6748ffd39,
+        type: 3}
+      propertyPath: optionsGO.Array.data[3]
+      value: 
+      objectReference: {fileID: 579444393}
+    - target: {fileID: 6339642099939068868, guid: fad56fd3398545f4398d46c6748ffd39,
+        type: 3}
+      propertyPath: optionsGO.Array.data[4]
+      value: 
+      objectReference: {fileID: 30450997}
+    - target: {fileID: 6339642099939068868, guid: fad56fd3398545f4398d46c6748ffd39,
+        type: 3}
+      propertyPath: optionsGO.Array.data[5]
+      value: 
+      objectReference: {fileID: 1983895042}
+    - target: {fileID: 6339642099939068868, guid: fad56fd3398545f4398d46c6748ffd39,
+        type: 3}
+      propertyPath: optionsGO.Array.data[6]
+      value: 
+      objectReference: {fileID: 835495145}
+    - target: {fileID: 6339642099939068868, guid: fad56fd3398545f4398d46c6748ffd39,
+        type: 3}
+      propertyPath: optionsGO.Array.data[7]
+      value: 
+      objectReference: {fileID: 2105233358}
     - target: {fileID: 6339642099939068869, guid: fad56fd3398545f4398d46c6748ffd39,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -6169,7 +6232,7 @@ PrefabInstance:
     - target: {fileID: 6339642099939068870, guid: fad56fd3398545f4398d46c6748ffd39,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fad56fd3398545f4398d46c6748ffd39, type: 3}
@@ -6746,6 +6809,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: H_Obj_Start
+      objectReference: {fileID: 0}
+    - target: {fileID: 9016291876169531008, guid: d019dcd4108211f43882dc3c098b8328,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9016291876169531015, guid: d019dcd4108211f43882dc3c098b8328,
         type: 3}

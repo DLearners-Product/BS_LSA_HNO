@@ -31,15 +31,20 @@ public class Main_HNO_obj_starts : MonoBehaviour
     public List<string> ObjStarts_listValues;
 
 #region  QA
+    int qIndex;
+    public int qCount;
     public GameObject questionGO;
     public GameObject[] optionsGO;
     Component question;
     Component[] options;
+    Component[] answers;
 #endregion
 
-    // Start is called before the first frame update
     void Start()
     {
+        qIndex = 0;
+        qCount = 10;
+        
         G_final_screen.SetActive(false);
         STR_gamename = this.gameObject.name;
         // OBJ_main_selectedcorrectobj = this;
@@ -50,21 +55,55 @@ public class Main_HNO_obj_starts : MonoBehaviour
         }
         Lettertohide.SetActive(true);
         fireworks.SetActive(false);
-        Main_Blended.OBJ_main_blended.levelno = 4;
+
+        // NEED TO REMOVE
+        Main_Blended.OBJ_main_blended.levelno = 11;
         QAManager.instance.UpdateActivityQuestion();
+        // -----------------------------------------
+        GetData();
         AssignData();
+		// ScoreManager.instance.InstantiateScore(qCount);
+    }
+
+    bool CheckOptionIsAns(Component option){
+        for(int i=0; i<answers.Length; i++){
+            if(option.text == answers[i].text){
+                return true;
+            }
+        }
+        return false;
+    }
+
+#region  QA
+    void GetData(){
+        question = QAManager.instance.GetQuestionAt(0, 0);
+        options = QAManager.instance.GetOption(0, 0);
+        answers = QAManager.instance.GetAnswer(0, 0);
     }
 
     void AssignData(){
-        question = QAManager.instance.GetQuestionAt(0, 0);
         questionGO.GetComponent<Image>().sprite = question._sprite;
 
-        options = QAManager.instance.GetOption(0, 0);
-        for (int i=0; i< optionsGO.Length; i++)
+        for (int i = 0; i < optionsGO.Length; i++)
         {
             optionsGO[i].GetComponent<Image>().sprite = options[i]._sprite;
+            optionsGO[i].tag = "Untagged";
+            if(CheckOptionIsAns(options[i])){
+                optionsGO[i].tag = "answer";
+            }
         }
     }
+
+    int GetAnswerComp(GameObject selectedObject){
+        for(int i=0; i<optionsGO.Length; i++){
+            if(optionsGO[i].Equals(selectedobj)){
+                // Debug.Log(optionsGO[i].name, optionsGO[i]);
+                return options[i].id;
+            }
+        }
+        return -1;
+    }
+#endregion
 
     public void Clicking()
     {
@@ -72,6 +111,10 @@ public class Main_HNO_obj_starts : MonoBehaviour
 
         if (selectedobj.tag == "answer")
         {
+            int answerID = GetAnswerComp(selectedobj);
+            Debug.Log("--> "+answerID);
+            ScoreManager.instance.RightAnswer(qIndex, 1, questionID : question.id, answerID : answerID);
+            qIndex++;
             firecount++;
             fires[firecount].SetActive(true);
             bat.Play("Bat_happy");
@@ -85,8 +128,6 @@ public class Main_HNO_obj_starts : MonoBehaviour
             selectedobj.gameObject.GetComponent<Image>().material = greyscale;
 
             selectedobj.GetComponent<Button>().enabled = false;
-            //wrong.clip = wrongs[0];
-            //wrong.Play();
 
             selectedobj.GetComponent<AudioSource>().Play();
 
@@ -95,6 +136,7 @@ public class Main_HNO_obj_starts : MonoBehaviour
         }
         else
         {
+            ScoreManager.instance.WrongAnswer(qIndex, 1);
             ObjStarts_listValues.Add(selectedobj.name);
 
             int random=Random.Range(1, wrongs.Length);
@@ -110,6 +152,7 @@ public class Main_HNO_obj_starts : MonoBehaviour
     {
         if (firecount == 5)
         {
+            BlendedOperations.instance.NotifyActivityCompleted();
             Lettertohide.SetActive(false);
             Invoke("Function_firework", 1f);
         }

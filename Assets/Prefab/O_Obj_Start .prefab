@@ -4147,6 +4147,17 @@ MonoBehaviour:
   wrong: {fileID: 7836039215459137949}
   G_final_screen: {fileID: 8544406717262870772}
   ObjStarts_listValues: []
+  qCount: 0
+  questionGO: {fileID: 8544406717707696604}
+  optionsGO:
+  - {fileID: 8544406718149791512}
+  - {fileID: 8544406717662619522}
+  - {fileID: 8544406718777952946}
+  - {fileID: 8544406718502607711}
+  - {fileID: 8544406718237019997}
+  - {fileID: 8544406716970409697}
+  - {fileID: 8544406717182203901}
+  - {fileID: 8544406716800826850}
 --- !u!1 &8544406718069141573
 GameObject:
   m_ObjectHideFlags: 0
