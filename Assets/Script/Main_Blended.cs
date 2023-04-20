@@ -76,6 +76,10 @@ public class Main_Blended : MonoBehaviour
     public string[] ACTIVITY_INSTRUCTION;
     public bool[] HAS_VIDEO;
     public bool[] HAS_WORKSHEET;
+    public bool[] HAS_SYLLABLE;
+    public bool[] HAS_GRAMMER;
+    public bool[] HAS_ACTIVITY;
+    public bool[] IS_MANUAL_ACTIVITY;
 
     // emerson -- project blue
 
