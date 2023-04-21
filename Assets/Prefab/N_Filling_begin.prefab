@@ -2866,7 +2866,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &370420975415159020
 RectTransform:
   m_ObjectHideFlags: 0
@@ -4881,6 +4881,21 @@ MonoBehaviour:
   answer_name: 
   click: 0
   G_final_Screen: {fileID: 370420976223053563}
+  qIndex: 0
+  questionGO: {fileID: 370420976670433942}
+  answerGO: {fileID: 370420976264584825}
+  _optionsGO:
+  - {fileID: 370420975316292617}
+  - {fileID: 370420976966241801}
+  - {fileID: 370420976406226672}
+  - {fileID: 370420975258690197}
+  question:
+    id: 0
+    text: 
+    _sprite: {fileID: 0}
+    audioClip: {fileID: 0}
+  _options: []
+  _answers: []
 --- !u!1 &370420976217865931
 GameObject:
   m_ObjectHideFlags: 0
@@ -5284,8 +5299,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -23.392, y: -24.4}
-  m_SizeDelta: {x: 504.02417, y: 228.27777}
+  m_AnchoredPosition: {x: -7.7, y: -24.4}
+  m_SizeDelta: {x: 624.91187, y: 228.27777}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &370420976264584827
 CanvasRenderer:
@@ -5934,8 +5949,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -8.4, y: -22.9}
-  m_SizeDelta: {x: 308.58008, y: 225.20972}
+  m_AnchoredPosition: {x: 12.4, y: -22.9}
+  m_SizeDelta: {x: 468.32422, y: 225.20972}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &370420976670433944
 CanvasRenderer:
