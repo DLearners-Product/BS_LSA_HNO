@@ -30,9 +30,8 @@ public class Main_HNO_obj_starts : MonoBehaviour
 
     public List<string> ObjStarts_listValues;
 
-#region  QA
+#region QA
     int qIndex;
-    public int qCount;
     public GameObject questionGO;
     public GameObject[] optionsGO;
     Component question;
@@ -43,7 +42,6 @@ public class Main_HNO_obj_starts : MonoBehaviour
     void Start()
     {
         qIndex = 0;
-        qCount = 10;
         
         G_final_screen.SetActive(false);
         STR_gamename = this.gameObject.name;
@@ -56,8 +54,8 @@ public class Main_HNO_obj_starts : MonoBehaviour
         Lettertohide.SetActive(true);
         fireworks.SetActive(false);
 
-        // NEED TO REMOVE
-        Main_Blended.OBJ_main_blended.levelno = 11;
+        // // NEED TO REMOVE
+        // Main_Blended.OBJ_main_blended.levelno = 11;
         QAManager.instance.UpdateActivityQuestion();
         // -----------------------------------------
         GetData();
