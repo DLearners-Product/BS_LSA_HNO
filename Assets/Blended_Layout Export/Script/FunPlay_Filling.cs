@@ -25,6 +25,17 @@ public class FunPlay_Filling : MonoBehaviour
     public bool click;
     public GameObject G_final_Screen;
 
+    [Header("QA")]
+#region QA
+    public int qIndex;
+    public GameObject questionGO;
+    public GameObject answerGO;
+    public GameObject[] _optionsGO;
+    [SerializeField] Component question;
+    [SerializeField] Component[] _options;
+    [SerializeField] Component[] _answers;
+#endregion
+
     //public GameObject optionPanel; //T_Phonemic-1
     //public GameObject[] otherOptions;  //T_Phonemic-1
 
@@ -52,7 +63,54 @@ public class FunPlay_Filling : MonoBehaviour
         G_dash.SetActive(true);
         block.SetActive(false);
 
+        qIndex = 0;
+        // testing need to remove
+        // Main_Blended.OBJ_main_blended.levelno = 12;
+        QAManager.instance.UpdateActivityQuestion();
+        GetData(qIndex);
+        AssignData();
     }
+
+    bool CheckOptionIsAns(Component option){
+        for(int i=0; i<_answers.Length; i++){
+            if(option.text == _answers[i].text){
+                return true;
+            }
+        }
+        return false;
+    }
+
+#region  QA
+    void GetData(int questionIndex){
+        question = QAManager.instance.GetQuestionAt(0, questionIndex);
+        _options = QAManager.instance.GetOption(0, questionIndex);
+        _answers = QAManager.instance.GetAnswer(0, questionIndex);
+    }
+
+    void AssignData(){
+        questionGO.GetComponent<Text>().text = question.text;
+
+        for (int i = 0; i < _optionsGO.Length; i++)
+        {
+            _optionsGO[i].GetComponent<Text>().text = _options[i].text;
+            _optionsGO[i].tag = "Untagged";
+            if(CheckOptionIsAns(_options[i])){
+            // if(_options[i].isAnswer){
+                _optionsGO[i].tag = "answer";
+            }
+        }
+    }
+
+    int GetAnswerComp(GameObject selectedObject){
+        for(int i=0; i<_optionsGO.Length; i++){
+            if(_optionsGO[i].Equals(selectedObject)){
+                // Debug.Log(optionsGO[i].name, optionsGO[i]);
+                return _options[i].id;
+            }
+        }
+        return -1;
+    }
+#endregion
 
     public void clicking()
     {
@@ -64,6 +122,10 @@ public class FunPlay_Filling : MonoBehaviour
         {
             if (click)
             {
+                int answerID = _answers[0].id;
+
+                ScoreManager.instance.RightAnswer(qIndex, questionID : question.id, answerID : answerID);
+
                 Debug.Log("ans");
                 coin_anim.Play("crtans_coin");
                 G_dash.SetActive(false);
@@ -79,10 +141,11 @@ public class FunPlay_Filling : MonoBehaviour
                 //selectedobject.gameObject.GetComponent<Button>().enabled = false;
                 //this.GetComponent<DragandDrop>().enabled = false;
             }
-
         }
         else
         {
+            ScoreManager.instance.WrongAnswer(qIndex, questionID : question.id);
+
             block.SetActive(true);
             coin_anim.Play("wrgans_coin");
             int random = Random.Range(1, clips.Length);
@@ -98,8 +161,11 @@ public class FunPlay_Filling : MonoBehaviour
         Debug.Log("ansshow");
         coin.SetActive(true);
         coin.gameObject.GetComponent<AudioSource>().Play();
-        questions[count].SetActive(false);
-        answers[count].SetActive(true);
+        // questions[count].SetActive(false);
+        // answers[count].SetActive(true);
+        questionGO.SetActive(false);
+        answerGO.SetActive(true);
+        answerGO.GetComponent<Text>().text = _answers[0].text + question.text;
         wrong.clip = answer_clips[count];
         wrong.Play();
 
@@ -118,23 +184,31 @@ public class FunPlay_Filling : MonoBehaviour
         if (count < 5)
         {
             count++;
-            for (int i = 0; i < questions.Length; i++)
-            {
-                questions[i].SetActive(false);
-                answers[i].SetActive(false);
+            qIndex++;
+
+            GetData(qIndex);
+            AssignData();
+
+            questionGO.SetActive(true);
+            answerGO.SetActive(false);
+            // for (int i = 0; i < questions.Length; i++)
+            // {
+            //     questions[i].SetActive(false);
+            //     answers[i].SetActive(false);
                 
-                options[i].SetActive(false);
-            }
-            block.SetActive(false);
-            answer_name =  answers[count].name; //Edited by emerson
-            questions[count].SetActive(true);
-            options[count].SetActive(true);
+            //     options[i].SetActive(false);
+            // }
+            // block.SetActive(false);
+            // answer_name =  answers[count].name; //Edited by emerson
+            // questions[count].SetActive(true);
+            // options[count].SetActive(true);
 
 
             FunPlay_listValues.Clear();
         }
         else
         {
+            BlendedOperations.instance.NotifyActivityCompleted();
             G_final_Screen.SetActive(true);
             G_dash.SetActive(false);
             for (int i = 0; i < questions.Length; i++)
