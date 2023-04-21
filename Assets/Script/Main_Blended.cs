@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Audio;
@@ -783,7 +783,7 @@ public class Main_Blended : MonoBehaviour
         {
             Destroy(G_currenlevel);
         }
-        var currentLevel = Instantiate(GA_levelsIG[levelno]);
+        var currentLevel = Instantiate(MainBlendedData.instance.slideDatas[levelno].slideObject);
         currentLevel.transform.SetParent(GameObject.Find("Game_Panel").transform, false);
         currentLevel.transform.SetAsFirstSibling();
         G_currenlevel = currentLevel;
