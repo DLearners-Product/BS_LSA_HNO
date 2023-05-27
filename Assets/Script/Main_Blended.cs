@@ -38,7 +38,7 @@ public class Main_Blended : MonoBehaviour
 
 
     public VideoPlayer Videoplayerinlevel;
-    bool B_pause;
+    public bool B_pause;
 
 
 
@@ -142,7 +142,7 @@ public class Main_Blended : MonoBehaviour
        /////////////////////////////////////////////////////////// STR_date_with_time = System.DateTime.Now.ToString("dd-MM-yy HH:mm");
 
         i_vol = 0;
-        B_pause = false;
+        B_pause = true;
         levelno = 0;
         THI_cloneLevels();
 
@@ -776,13 +776,16 @@ public class Main_Blended : MonoBehaviour
 
     public void THI_cloneLevels()
     {
-        B_pause = false;
+        B_pause = true;
         G_worksheet.transform.GetChild(0).gameObject.SetActive(false);
 
         if (G_currenlevel != null)
         {
             Destroy(G_currenlevel);
         }
+
+        BlendedOperations.instance.AddButtonToSyllabifyingTC();
+
         var currentLevel = Instantiate(MainBlendedData.instance.slideDatas[levelno].slideObject);
         currentLevel.transform.SetParent(GameObject.Find("Game_Panel").transform, false);
         currentLevel.transform.SetAsFirstSibling();
@@ -819,6 +822,8 @@ public class Main_Blended : MonoBehaviour
 
     public void THI_videoSlidesPausePlay()
     {
+        Debug.Log("B_Pause : ");
+        Debug.Log(B_pause);
         Videoplayerinlevel = GameObject.Find("Video Player").GetComponent<VideoPlayer>();
         if (B_pause)
         {

@@ -769,6 +769,7 @@ GameObject:
   - component: {fileID: 2564637336365748894}
   - component: {fileID: 2564637336365748888}
   - component: {fileID: 2564637336365748895}
+  - component: {fileID: 1156219581}
   m_Layer: 5
   m_Name: BG
   m_TagString: Untagged
@@ -842,6 +843,18 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &1156219581
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2564637336365748893}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd7f4fdd05f21284eb075a89c4b8cbd6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2564637336463277957
 GameObject:
   m_ObjectHideFlags: 0
@@ -1232,7 +1245,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: <#01AAFF>h</color>at
+  m_text: <#01AAFF>H</color>at
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 0e332bcd44b329c4e883386d261a5a90, type: 2}
   m_sharedMaterial: {fileID: -57982561820341523, guid: 0e332bcd44b329c4e883386d261a5a90,
@@ -1500,7 +1513,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: <#01AAFF>h</color>and
+  m_text: <#01AAFF>H</color>and
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 0e332bcd44b329c4e883386d261a5a90, type: 2}
   m_sharedMaterial: {fileID: -57982561820341523, guid: 0e332bcd44b329c4e883386d261a5a90,

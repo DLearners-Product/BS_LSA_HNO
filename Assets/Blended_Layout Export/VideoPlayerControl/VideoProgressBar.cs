@@ -7,8 +7,16 @@ public class VideoProgressBar : MonoBehaviour, IDragHandler, IPointerDownHandler
 {
     [SerializeField]
     private VideoPlayer videoPlayer;
+    [SerializeField] private GameObject videoLoading, spawnedLoader;
     public Camera Cam;
     public Image progress;
+    double lastTimePlayed;
+    float waitTime = 3f, 
+            time = 0f;
+    float skipFrame;
+    bool requestSkip,
+        requestPrevSkip,
+        requestNextSkip;
     
     private void Awake()
     {
@@ -17,8 +25,33 @@ public class VideoProgressBar : MonoBehaviour, IDragHandler, IPointerDownHandler
 
     private void Update()
     {
+        Check_Video_Buffering();
         if (videoPlayer.frameCount > 0)
             progress.fillAmount = (float)videoPlayer.frame / (float)videoPlayer.frameCount;
+    }
+
+    private void Check_Video_Buffering(){
+        if (videoPlayer.isPlaying && (Time.frameCount % (int)(videoPlayer.frameRate + 1)) == 0)
+        {
+            if (lastTimePlayed == videoPlayer.time)
+            {
+                // Debug.Log($"buffering");
+                time += Time.deltaTime;
+                if(spawnedLoader == null && time > waitTime)
+                    spawnedLoader = Instantiate(videoLoading, gameObject.transform);
+            }
+            else
+            {
+                // Debug.Log($"not buffering");
+                time = 0f;
+                if(spawnedLoader != null)
+                    Destroy(spawnedLoader);
+            }
+            lastTimePlayed = videoPlayer.time;
+        }else if(!Main_Blended.OBJ_main_blended.B_pause && !videoPlayer.isPlaying){
+                if(spawnedLoader == null)
+                    spawnedLoader = Instantiate(videoLoading, gameObject.transform);
+        }
     }
 
     public void OnDrag(PointerEventData eventData)
@@ -44,7 +77,9 @@ public class VideoProgressBar : MonoBehaviour, IDragHandler, IPointerDownHandler
 
     private void SkipToPercent(float pct)
     {
-        var frame = videoPlayer.frameCount * pct;
-        videoPlayer.frame = (long)frame;
+        skipFrame = videoPlayer.frameCount * pct;
+        videoPlayer.frame = (long)skipFrame;
+        if(spawnedLoader == null)
+            spawnedLoader = Instantiate(videoLoading, gameObject.transform);
     }
 }

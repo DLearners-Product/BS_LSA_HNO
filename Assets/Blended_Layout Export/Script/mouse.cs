@@ -36,7 +36,6 @@ public class mouse : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
 
 	public void OnPointerExit(PointerEventData eventData)
 	{
-		Debug.Log("exit");
 		this.gameObject.transform.localScale = new Vector2(1, 1);
 		if (this.gameObject.GetComponent<Animator>() != null)
 		{
