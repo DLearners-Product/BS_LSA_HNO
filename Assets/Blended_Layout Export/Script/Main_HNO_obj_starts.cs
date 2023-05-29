@@ -30,6 +30,8 @@ public class Main_HNO_obj_starts : MonoBehaviour
 
     public List<string> ObjStarts_listValues;
 
+    public GameObject[] optionObjects;
+
 #region QA
     int qIndex;
     public GameObject questionGO;
@@ -54,13 +56,16 @@ public class Main_HNO_obj_starts : MonoBehaviour
         Lettertohide.SetActive(true);
         fireworks.SetActive(false);
 
+        InstantiateInCircle(Lettertohide.transform.position, optionObjects.Length, 3, Lettertohide.transform.position.z);
+
         // // NEED TO REMOVE
-        // Main_Blended.OBJ_main_blended.levelno = 11;
+        Main_Blended.OBJ_main_blended.levelno = 11;
         QAManager.instance.UpdateActivityQuestion();
         // -----------------------------------------
         GetData();
         AssignData();
 		// ScoreManager.instance.InstantiateScore(qCount);
+      
     }
 
     bool CheckOptionIsAns(Component option){
@@ -103,6 +108,7 @@ public class Main_HNO_obj_starts : MonoBehaviour
     }
 #endregion
 
+
     public void Clicking()
     {
         selectedobj = EventSystem.current.currentSelectedGameObject;
@@ -124,6 +130,12 @@ public class Main_HNO_obj_starts : MonoBehaviour
             selectedobj.gameObject.GetComponent<mouse>().enabled = false;   //removing hover effect
 
             selectedobj.gameObject.GetComponent<Image>().material = greyscale;
+
+            if(selectedobj.name == "moon")
+            {
+                selectedobj.gameObject.GetComponent<Image>().color = Color.grey;
+               
+            }
 
             selectedobj.GetComponent<Button>().enabled = false;
 
@@ -156,6 +168,23 @@ public class Main_HNO_obj_starts : MonoBehaviour
         }
     }
 
+    
+
+     public void InstantiateInCircle(Vector3 location, int howMany, float radius, float yPosition)
+     {
+         float angleSection = Mathf.PI * 2f / howMany;
+         for (int i = 0; i < howMany; i++)
+         {
+            float angle = i * angleSection;
+            Vector3 newPos = location + new Vector3(Mathf.Cos(angle), Mathf.Sin(angle), 0) * radius;
+            newPos.z = yPosition;
+            Debug.Log(newPos);
+            // GameObject tmp = Instantiate(prefab, Lettertohide.transform);
+            optionObjects[i].transform.position = newPos;
+            // optionObjects[i].transform.rotation = prefab.transform.rotation;
+            optionObjects[i].GetComponent<HNO_Orbiting>().enabled = true;
+         }
+     }
     
     public void Function_firework()
     {

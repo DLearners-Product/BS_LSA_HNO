@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
+using TMPro;
 
 public class FunPlay_Filling : MonoBehaviour
 {
@@ -24,6 +25,8 @@ public class FunPlay_Filling : MonoBehaviour
     public string answer_name;
     public bool click;
     public GameObject G_final_Screen;
+     [SerializeField] private TextMeshProUGUI countText;
+     private static int Q_count;
 
     [Header("QA")]
 #region QA
@@ -112,6 +115,18 @@ public class FunPlay_Filling : MonoBehaviour
     }
 #endregion
 
+  public void  Update() {
+         if (Q_count < 7)
+        {
+            countText.text = Q_count + "/6";
+        }
+        else
+        {
+            Q_count = 1;
+        }
+    
+  }
+
     public void clicking()
     {
         selectedobject = EventSystem.current.currentSelectedGameObject;
@@ -145,7 +160,7 @@ public class FunPlay_Filling : MonoBehaviour
         else
         {
             ScoreManager.instance.WrongAnswer(qIndex, questionID : question.id);
-
+              Q_count++;
             block.SetActive(true);
             coin_anim.Play("wrgans_coin");
             int random = Random.Range(1, clips.Length);
