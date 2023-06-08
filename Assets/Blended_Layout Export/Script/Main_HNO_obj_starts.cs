@@ -59,11 +59,11 @@ public class Main_HNO_obj_starts : MonoBehaviour
         InstantiateInCircle(Lettertohide.transform.position, optionObjects.Length, 3, Lettertohide.transform.position.z);
 
         // // NEED TO REMOVE
-        Main_Blended.OBJ_main_blended.levelno = 11;
+        // Main_Blended.OBJ_main_blended.levelno = 18;
         QAManager.instance.UpdateActivityQuestion();
         // -----------------------------------------
         GetData();
-        AssignData();
+        // AssignData();
 		// ScoreManager.instance.InstantiateScore(qCount);
       
     }
@@ -98,8 +98,8 @@ public class Main_HNO_obj_starts : MonoBehaviour
     }
 
     int GetAnswerComp(GameObject selectedObject){
-        for(int i=0; i<optionsGO.Length; i++){
-            if(optionsGO[i].Equals(selectedobj)){
+        for(int i=0; i<options.Length; i++){
+            if(options[i].text.ToLower() == selectedObject.name){
                 // Debug.Log(optionsGO[i].name, optionsGO[i]);
                 return options[i].id;
             }
@@ -172,18 +172,17 @@ public class Main_HNO_obj_starts : MonoBehaviour
 
      public void InstantiateInCircle(Vector3 location, int howMany, float radius, float yPosition)
      {
-         float angleSection = Mathf.PI * 2f / howMany;
-         for (int i = 0; i < howMany; i++)
-         {
-            float angle = i * angleSection;
-            Vector3 newPos = location + new Vector3(Mathf.Cos(angle), Mathf.Sin(angle), 0) * radius;
-            newPos.z = yPosition;
-            Debug.Log(newPos);
-            // GameObject tmp = Instantiate(prefab, Lettertohide.transform);
-            optionObjects[i].transform.position = newPos;
-            // optionObjects[i].transform.rotation = prefab.transform.rotation;
-            optionObjects[i].GetComponent<HNO_Orbiting>().enabled = true;
-         }
+        float angleSection = Mathf.PI * 2f / howMany;
+        for (int i = 0; i < howMany; i++)
+        {
+        float angle = i * angleSection;
+        Vector3 newPos = location + new Vector3(Mathf.Cos(angle), Mathf.Sin(angle), 0) * radius;
+        newPos.z = yPosition;
+        // GameObject tmp = Instantiate(prefab, Lettertohide.transform);
+        optionObjects[i].transform.position = newPos;
+        // optionObjects[i].transform.rotation = prefab.transform.rotation;
+        optionObjects[i].GetComponent<HNO_Orbiting>().enabled = true;
+        }
      }
     
     public void Function_firework()

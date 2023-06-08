@@ -1616,9 +1616,6 @@ MonoBehaviour:
   - {fileID: 3726392318755178008}
   - {fileID: 3726392319320154048}
   - {fileID: 7227187737080627430}
-  radius: 2
-  heightObject: 2
-  ringPostion: 24
   questionGO: {fileID: 3726392318618856713}
   optionsGO:
   - {fileID: 3726392319465764406}
@@ -4826,7 +4823,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 112.3, y: 115.8}
+  m_AnchoredPosition: {x: -0.8, y: 5.8}
   m_SizeDelta: {x: 94.29355, y: 100.00598}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &3726392320466575318
@@ -4849,7 +4846,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Material: {fileID: 2100000, guid: 0a56ec079c33b43539d3759ed9dda6d7, type: 2}
+  m_Material: {fileID: 0}
   m_Color: {r: 1, g: 0.9858491, b: 0.9858491, a: 1}
   m_RaycastTarget: 1
   m_Maskable: 1
