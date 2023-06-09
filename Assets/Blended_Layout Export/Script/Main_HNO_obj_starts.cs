@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
-
+using TMPro;
 
 public class Main_HNO_obj_starts : MonoBehaviour
 {
@@ -31,6 +31,7 @@ public class Main_HNO_obj_starts : MonoBehaviour
     public List<string> ObjStarts_listValues;
 
     public GameObject[] optionObjects;
+    public TMP_Text counterObject;
 
 #region QA
     int qIndex;
@@ -59,13 +60,17 @@ public class Main_HNO_obj_starts : MonoBehaviour
         InstantiateInCircle(Lettertohide.transform.position, optionObjects.Length, 3, Lettertohide.transform.position.z);
 
         // // NEED TO REMOVE
-        // Main_Blended.OBJ_main_blended.levelno = 18;
+        // Main_Blended.OBJ_main_blended.levelno = 11;
         QAManager.instance.UpdateActivityQuestion();
         // -----------------------------------------
         GetData();
+        UpdateQuestionCounter();
         // AssignData();
 		// ScoreManager.instance.InstantiateScore(qCount);
-      
+    }
+
+    void UpdateQuestionCounter(){
+        counterObject.text = qIndex + "/" + fires.Length;
     }
 
     bool CheckOptionIsAns(Component option){
@@ -122,6 +127,8 @@ public class Main_HNO_obj_starts : MonoBehaviour
             firecount++;
             fires[firecount].SetActive(true);
             bat.Play("Bat_happy");
+
+            UpdateQuestionCounter();
 
             ObjStarts_listValues.Add(selectedobj.name);
 
@@ -208,6 +215,7 @@ public class Main_HNO_obj_starts : MonoBehaviour
     }
     public void completescreen()
     {
+        counterObject.transform.parent.gameObject.SetActive(false);
         G_final_screen.SetActive(true);
     }
 
