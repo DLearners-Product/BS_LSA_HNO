@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System.Collections;
+using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 using UnityEngine.Video;
@@ -20,7 +21,24 @@ public class VideoProgressBar : MonoBehaviour, IDragHandler, IPointerDownHandler
     
     private void Awake()
     {
+        videoPlayer.playOnAwake = false;
         Cam = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<Camera>();
+        videoPlayer.targetTexture.Release();
+    }
+
+    private void OnEnable() {
+        // StartCoroutine(GetThumbnail());
+    }
+
+    IEnumerator GetThumbnail(){
+        videoPlayer.Prepare();
+        while(!videoPlayer.isPrepared){
+            yield return new WaitForEndOfFrame();
+        }
+
+        videoPlayer.frame = 10;
+        videoPlayer.Play();
+        videoPlayer.Pause();
     }
 
     private void Update()
