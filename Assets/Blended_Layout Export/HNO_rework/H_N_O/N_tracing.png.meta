@@ -1,7 +1,34 @@
 fileFormatVersion: 2
 guid: b5f4cd214b9542a4dafba290610b88ae
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: -6127333850471677478
+    second: N_tracing_0
+  - first:
+      213: 3111088603102655621
+    second: N_tracing_1
+  - first:
+      213: -3156692568585599872
+    second: capital_N_2
+  - first:
+      213: 5211063343534760087
+    second: N_tracing_3
+  - first:
+      213: -4236989732173924963
+    second: N_tracing_4
+  - first:
+      213: -7669488372289629088
+    second: N_tracing_5
+  - first:
+      213: -7194216779669854447
+    second: N_tracing_6
+  - first:
+      213: -522078905599693686
+    second: N_tracing_7
+  - first:
+      213: -617321080183337969
+    second: N_tracing_8
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -40,7 +67,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -97,7 +124,91 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: capital_N_2
+      rect:
+        serializedVersion: 2
+        x: 316
+        y: 533
+        width: 427
+        height: 347
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 084075075dc2134d0800000000000000
+      internalID: -3156692568585599872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: N_tracing_6
+      rect:
+        serializedVersion: 2
+        x: 189
+        y: 62
+        width: 46
+        height: 319
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 117af9a94f1092c90800000000000000
+      internalID: -7194216779669854447
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: N_tracing_7
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 40
+        width: 256
+        height: 314
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8c610f500431c8f0800000000000000
+      internalID: -522078905599693686
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: N_tracing_8
+      rect:
+        serializedVersion: 2
+        x: 784
+        y: 48
+        width: 56
+        height: 296
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0ccf4f8fb5de67f0800000000000000
+      internalID: -617321080183337969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []

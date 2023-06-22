@@ -244,7 +244,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &61225344
 RectTransform:
   m_ObjectHideFlags: 0
@@ -4051,8 +4051,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: db2cf15eb2e600848bcb07df83d2d39d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  blendedIntegrationSO: {fileID: 11400000, guid: 3dc3edb62de7eec4091171841628df52,
-    type: 2}
   activityContents:
   - slideNo: 4
     activityName: H object start
@@ -5101,7 +5099,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1593944277
 RectTransform:
   m_ObjectHideFlags: 0
