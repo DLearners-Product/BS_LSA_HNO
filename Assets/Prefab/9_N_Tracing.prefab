@@ -526,7 +526,7 @@ MonoBehaviour:
   B_restart: 0
   sound: {fileID: 8739796285455905750}
   AS_Empty: {fileID: 8739796285462188950}
-  AC_phonic: {fileID: 8300000, guid: 5ef351ce2c48c43c7b39880b7ef62763, type: 3}
+  AC_phonic: {fileID: 8300000, guid: 8d7f38b44013d0b40bc176727f91978b, type: 3}
 --- !u!1 &1180373987124940458
 GameObject:
   m_ObjectHideFlags: 0
@@ -2337,7 +2337,7 @@ MonoBehaviour:
   B_restart: 0
   sound: {fileID: 8739796285455905750}
   AS_Empty: {fileID: 8739796285462188950}
-  AC_phonic: {fileID: 8300000, guid: 5ef351ce2c48c43c7b39880b7ef62763, type: 3}
+  AC_phonic: {fileID: 8300000, guid: 8d7f38b44013d0b40bc176727f91978b, type: 3}
 --- !u!1 &8739796286341929870
 GameObject:
   m_ObjectHideFlags: 0
