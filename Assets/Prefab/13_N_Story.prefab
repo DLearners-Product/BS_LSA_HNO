@@ -234,7 +234,7 @@ GameObject:
   - component: {fileID: 1251252258601325449}
   - component: {fileID: 1251252258601325450}
   m_Layer: 5
-  m_Name: N_Story
+  m_Name: 13_N_Story
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -279,6 +279,7 @@ MonoBehaviour:
   videoLoading: {fileID: 4945578818612628505, guid: 7bbcfff65bcba47eca147f4dd353b3bd,
     type: 3}
   spawnedLoader: {fileID: 0}
+  thumbnailTexture: {fileID: 2800000, guid: 5dd7f75d71dd6a34785f54b1ac9faa6b, type: 3}
   Cam: {fileID: 0}
   progress: {fileID: 1251252259460428882}
 --- !u!1 &1251252258742527765
