@@ -822,8 +822,6 @@ public class Main_Blended : MonoBehaviour
 
     public void THI_videoSlidesPausePlay()
     {
-        Debug.Log("B_Pause : ");
-        Debug.Log(B_pause);
         Videoplayerinlevel = GameObject.Find("Video Player").GetComponent<VideoPlayer>();
         if (B_pause)
         {
