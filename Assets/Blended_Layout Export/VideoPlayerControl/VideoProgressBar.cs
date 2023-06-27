@@ -9,6 +9,7 @@ public class VideoProgressBar : MonoBehaviour, IDragHandler, IPointerDownHandler
     [SerializeField]
     private VideoPlayer videoPlayer;
     [SerializeField] private GameObject videoLoading, spawnedLoader;
+    public Texture2D thumbnailTexture;
     public Camera Cam;
     public Image progress;
     double lastTimePlayed;
@@ -27,6 +28,8 @@ public class VideoProgressBar : MonoBehaviour, IDragHandler, IPointerDownHandler
     }
 
     private void OnEnable() {
+        if(thumbnailTexture != null)
+            Graphics.Blit(thumbnailTexture, videoPlayer.targetTexture);
         // StartCoroutine(GetThumbnail());
     }
 
