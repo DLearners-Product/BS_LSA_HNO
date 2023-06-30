@@ -231,7 +231,7 @@ GameObject:
   - component: {fileID: 7980880547237737295}
   - component: {fileID: 7980880547237737294}
   m_Layer: 5
-  m_Name: Goodbye
+  m_Name: 20_Goodbye
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -275,6 +275,7 @@ MonoBehaviour:
   videoLoading: {fileID: 4945578818612628505, guid: 7bbcfff65bcba47eca147f4dd353b3bd,
     type: 3}
   spawnedLoader: {fileID: 0}
+  thumbnailTexture: {fileID: 2800000, guid: 6c4c4874ae56840649cd468c590cc03d, type: 3}
   Cam: {fileID: 0}
   progress: {fileID: 7980880547629019547}
 --- !u!1 &7980880547629019545

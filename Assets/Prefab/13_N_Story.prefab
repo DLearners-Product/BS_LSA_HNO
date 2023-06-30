@@ -136,7 +136,7 @@ VideoPlayer:
   - {fileID: 0}
   m_DirectAudioVolumes:
   - 1
-  m_Url: https://dlearners.in/webgl_games/hno_videos/n%20story%20compressed.mp4
+  m_Url: https://dlearners.com/Blended/webgl_games/assest/video/n_story.m4v
   m_EnabledAudioTracks: 01
   m_DirectAudioMutes: 00
   m_ControlledAudioTrackCount: 1
