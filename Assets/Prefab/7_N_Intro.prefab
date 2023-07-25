@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6154905804792062909}
   m_Layer: 5
-  m_Name: 'N_Intro '
+  m_Name: 7_N_Intro
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -158,7 +158,7 @@ MonoBehaviour:
         m_MethodName: PlayOneShot
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 8300000, guid: 5ef351ce2c48c43c7b39880b7ef62763,
+          m_ObjectArgument: {fileID: 8300000, guid: 8d7f38b44013d0b40bc176727f91978b,
             type: 3}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
           m_IntArgument: 0
@@ -497,7 +497,7 @@ MonoBehaviour:
         m_MethodName: PlayOneShot
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 8300000, guid: 5ef351ce2c48c43c7b39880b7ef62763,
+          m_ObjectArgument: {fileID: 8300000, guid: 8d7f38b44013d0b40bc176727f91978b,
             type: 3}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
           m_IntArgument: 0
