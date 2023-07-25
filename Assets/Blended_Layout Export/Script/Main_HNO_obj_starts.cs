@@ -171,7 +171,7 @@ public class Main_HNO_obj_starts : MonoBehaviour
         {
             BlendedOperations.instance.NotifyActivityCompleted();
             Lettertohide.SetActive(false);
-            Invoke("Function_firework", 1f);
+            Invoke("Function_firework", 2f);
         }
     }
 
@@ -209,7 +209,7 @@ public class Main_HNO_obj_starts : MonoBehaviour
         else
         {
             bat.Play("Bat_completed");
-            Invoke("completescreen", 2.5f);
+            Invoke("completescreen", 3.5f);
          //   Main_Blended.OBJ_main_blended.PostDataToDB(STR_gamename, ObjStarts_listValues);
         }
     }

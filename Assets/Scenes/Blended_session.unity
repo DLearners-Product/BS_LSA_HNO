@@ -244,7 +244,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &61225344
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1702,6 +1702,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: '10_N_Obj_Start '
       objectReference: {fileID: 0}
+    - target: {fileID: 3520204077815762563, guid: 66ede0031191d8649a73545735b0c7dd,
+        type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 6909bb18f9c12fa44a3211a79a887ef9, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 66ede0031191d8649a73545735b0c7dd, type: 3}
 --- !u!224 &735356487 stripped
@@ -5258,7 +5263,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1593944277
 RectTransform:
   m_ObjectHideFlags: 0
