@@ -109,8 +109,8 @@ public class FunPlay_Filling : MonoBehaviour
     }
 
     int GetAnswerComp(GameObject selectedObject){
-        for(int i=0; i<_optionsGO.Length; i++){
-            if(_optionsGO[i].Equals(selectedObject)){
+        for(int i=0; i<_options.Length; i++){
+            if(_options[i].text == selectedObject.name){
                 // Debug.Log(optionsGO[i].name, optionsGO[i]);
                 return _options[i].id;
             }
@@ -149,7 +149,8 @@ public class FunPlay_Filling : MonoBehaviour
         }
         else
         {
-            ScoreManager.instance.WrongAnswer(qIndex, questionID : question.id);
+            int answerID = GetAnswerComp(selectedobject);
+            ScoreManager.instance.WrongAnswer(qIndex, questionID : question.id, answerID : answerID);
             Q_count++;
             block.SetActive(true);
             coin_anim.Play("wrgans_coin");
@@ -217,6 +218,7 @@ public class FunPlay_Filling : MonoBehaviour
         }
         else
         {
+            countText.transform.parent.gameObject.SetActive(false);
             BlendedOperations.instance.NotifyActivityCompleted();
             G_final_Screen.SetActive(true);
             G_dash.SetActive(false);
