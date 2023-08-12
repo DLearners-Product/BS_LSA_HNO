@@ -121,7 +121,7 @@ public class Main_HNO_obj_starts : MonoBehaviour
         if (selectedobj.tag == "answer")
         {
             int answerID = GetAnswerComp(selectedobj);
-            Debug.Log("--> "+answerID);
+
             ScoreManager.instance.RightAnswer(qIndex, 1, questionID : question.id, answerID : answerID);
             qIndex++;
             firecount++;
@@ -153,7 +153,8 @@ public class Main_HNO_obj_starts : MonoBehaviour
         }
         else
         {
-            ScoreManager.instance.WrongAnswer(qIndex, 1);
+            int answerID = GetAnswerComp(selectedobj);
+            ScoreManager.instance.WrongAnswer(qIndex, questionID : question.id, answerID: answerID);
             ObjStarts_listValues.Add(selectedobj.name);
 
             int random=Random.Range(1, wrongs.Length);
