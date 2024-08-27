@@ -9,6 +9,7 @@ public class TracingController : MonoBehaviour
     public Button backButton;
     public GameObject capitalSlide;
     public GameObject smallLetterSlide;
+    public GameObject deleteVar; 
 
     private void Start()
     {
