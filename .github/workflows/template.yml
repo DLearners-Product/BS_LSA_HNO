@@ -50,6 +50,10 @@ jobs:
             Library-test-project-
             Library-
 
+      - name: Updating Git submodules
+        run:
+          git submodule update
+
       - name: List Project Structure
         run:
           ls -al Assets/BlendedTemplate/
