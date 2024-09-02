@@ -52,7 +52,7 @@ jobs:
 
       - name: List Project Structure
         run:
-          ls -al
+          ls -al Assets/
 
       # - uses: webbertakken/unity-test-runner@v4
       #   id: testRunner
