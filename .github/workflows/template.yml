@@ -52,8 +52,7 @@ jobs:
 
       - name: List Project Structure
         run:
-          echo "============= THIS IS CUSTOM MESSAGE ============="
-          ls
+          ls -al
 
       # - uses: webbertakken/unity-test-runner@v4
       #   id: testRunner
