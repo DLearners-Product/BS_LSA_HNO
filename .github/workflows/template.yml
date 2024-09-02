@@ -50,9 +50,13 @@ jobs:
             Library-test-project-
             Library-
 
+      - name: CHeck branch
+        run:
+          git branch
+
       - name: Updating Git submodules
         run:
-          git submodule update
+          git submodule init && git submodule update
 
       - name: List Project Structure
         run:
