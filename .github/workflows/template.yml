@@ -57,10 +57,15 @@ jobs:
       - name: List Project Structure
         run:
           ls -al Assets/BlendedTemplate/
-      
-      - name: Test Python
+
+      - name: Install Python2
+        uses: actions/setup-python@v5
+        with:
+          python-version: '2.7.18'
+
+      - name: Python2 version check
         run:
-          python --version
+          python2 --version
 
       # - uses: webbertakken/unity-test-runner@v4
       #   id: testRunner
