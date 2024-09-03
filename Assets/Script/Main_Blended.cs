@@ -123,6 +123,7 @@ public class Main_Blended : MonoBehaviour
 
     void Awake()
     {
+        Debug.Log($"In Main_Blended Awake()..");
         /*SLIDE_NAMES = new string[MAX_SLIDES];
         TEACHER_INSTRUCTION = new string[MAX_SLIDES];
         HAS_VIDEO = new bool[MAX_SLIDES];
@@ -150,6 +151,7 @@ public class Main_Blended : MonoBehaviour
     }
     private void Start()
     {
+        Debug.Log($"In Main_Blended Start()..");
         LS_WORDS = new List<string>();
        
         G_worksheet.transform.GetChild(0).gameObject.SetActive(false);
