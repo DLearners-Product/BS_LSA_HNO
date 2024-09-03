@@ -60,7 +60,7 @@ jobs:
       
       - name: Test Python
         run:
-          python2 --version
+          python --version
 
       # - uses: webbertakken/unity-test-runner@v4
       #   id: testRunner
