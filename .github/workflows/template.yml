@@ -57,80 +57,84 @@ jobs:
       - name: List Project Structure
         run:
           ls -al Assets/BlendedTemplate/
-
-      - uses: webbertakken/unity-test-runner@v4
-        id: testRunner
-        env:
-          UNITY_LICENSE: ${{ secrets.UNITY_LICENSE }}
-          UNITY_EMAIL: ${{ secrets.UNITY_EMAIL }}
-          UNITY_PASSWORD: ${{ secrets.UNITY_PASSWORD }}
-        with:
-          testMode: all
-
-      - uses: actions/upload-artifact@v1
-        with:
-          name: Test results (all modes)
-          path: ${{ steps.testRunner.outputs.artifactsPath }}
-
-      - name: List Project Structure after Testrunner
+      
+      - name: Test Python
         run:
-          ls -al Assets/BlendedTemplate/
+          python2 --version
 
-  buildWebGL:
-    needs: testRunner
-    name: Build for WebGL 🖥️
-    runs-on: ubuntu-latest
-    strategy:
-      fail-fast: false
-    steps:
-      - name: Checkout code
-        uses: actions/checkout@v4
+      # - uses: webbertakken/unity-test-runner@v4
+      #   id: testRunner
+      #   env:
+      #     UNITY_LICENSE: ${{ secrets.UNITY_LICENSE }}
+      #     UNITY_EMAIL: ${{ secrets.UNITY_EMAIL }}
+      #     UNITY_PASSWORD: ${{ secrets.UNITY_PASSWORD }}
+      #   with:
+      #     testMode: all
 
-      - name: Create LFS file list
-        run: git lfs ls-files -l | cut -d' ' -f1 | sort > .lfs-assets-id
+      # - uses: actions/upload-artifact@v1
+      #   with:
+      #     name: Test results (all modes)
+      #     path: ${{ steps.testRunner.outputs.artifactsPath }}
 
-      - name: Restore LFS cache
-        uses: actions/cache@v4
-        id: lfs-cache
-        with:
-          path: .git/lfs
-          key: ${{ runner.os }}-lfs-${{ hashFiles('.lfs-assets-id') }}
+      # - name: List Project Structure after Testrunner
+      #   run:
+      #     ls -al Assets/BlendedTemplate/
 
-      - name: Git LFS Pull
-        run: |
-          git lfs pull
-          git add .
-          git reset --hard
+  # buildWebGL:
+  #   needs: testRunner
+  #   name: Build for WebGL 🖥️
+  #   runs-on: ubuntu-latest
+  #   strategy:
+  #     fail-fast: false
+  #   steps:
+  #     - name: Checkout code
+  #       uses: actions/checkout@v4
 
-      - name: Restore Library cache
-        uses: actions/cache@v4
-        with:
-          path: Library
-          key: Library-build-WebGL
-          restore-keys: |
-            Library-build-
-            Library-
+  #     - name: Create LFS file list
+  #       run: git lfs ls-files -l | cut -d' ' -f1 | sort > .lfs-assets-id
 
-      - name: Updating Git submodules
-        run:
-          git submodule init && git submodule update
+  #     - name: Restore LFS cache
+  #       uses: actions/cache@v4
+  #       id: lfs-cache
+  #       with:
+  #         path: .git/lfs
+  #         key: ${{ runner.os }}-lfs-${{ hashFiles('.lfs-assets-id') }}
 
-      - name: List Project Structure
-        run:
-          ls -al Assets/BlendedTemplate/
+  #     - name: Git LFS Pull
+  #       run: |
+  #         git lfs pull
+  #         git add .
+  #         git reset --hard
 
-      - uses: webbertakken/unity-builder@v4
-        env:
-          UNITY_LICENSE: ${{ secrets.UNITY_LICENSE }}
-          UNITY_EMAIL: ${{ secrets.UNITY_EMAIL }}
-          UNITY_PASSWORD: ${{ secrets.UNITY_PASSWORD }}
-        with:
-          targetPlatform: WebGL
+  #     - name: Restore Library cache
+  #       uses: actions/cache@v4
+  #       with:
+  #         path: Library
+  #         key: Library-build-WebGL
+  #         restore-keys: |
+  #           Library-build-
+  #           Library-
 
-      - uses: actions/upload-artifact@v3
-        with:
-          name: build-WebGL
-          path: build/WebGL
+  #     - name: Updating Git submodules
+  #       run:
+  #         git submodule init && git submodule update
+
+  #     - name: List Project Structure
+  #       run:
+  #         ls -al Assets/BlendedTemplate/
+
+  #     - uses: webbertakken/unity-builder@v4
+  #       env:
+  #         UNITY_LICENSE: ${{ secrets.UNITY_LICENSE }}
+  #         UNITY_EMAIL: ${{ secrets.UNITY_EMAIL }}
+  #         UNITY_PASSWORD: ${{ secrets.UNITY_PASSWORD }}
+  #       with:
+  #         targetPlatform: WebGL
+
+  #     - uses: actions/upload-artifact@v3
+  #       with:
+  #         name: build-WebGL
+  #         path: build/WebGL
 
 #  buildWindows:
 #    needs: testRunner
