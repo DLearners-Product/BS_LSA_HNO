@@ -776,6 +776,7 @@ public class Main_Blended : MonoBehaviour
 
     public void THI_cloneLevels()
     {
+        Debug.Log($"THI_cloneLevels Slide Count :: {MainBlendedData.instance.slideDatas.Count} LEVEL NO = {levelno}");
         B_pause = true;
         G_worksheet.transform.GetChild(0).gameObject.SetActive(false);
 
