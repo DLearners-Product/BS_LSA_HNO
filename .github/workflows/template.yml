@@ -83,6 +83,10 @@ jobs:
     strategy:
       fail-fast: false
     steps:
+      - name: List Project Structure before Build
+        run:
+          ls -al Assets/BlendedTemplate/
+
       - name: Checkout code
         uses: actions/checkout@v4
 
