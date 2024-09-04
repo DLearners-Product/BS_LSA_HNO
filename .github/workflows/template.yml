@@ -86,6 +86,10 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
 
+      - name: Updating Git submodules
+        run:
+          git submodule init && git submodule update
+
       - name: Create LFS file list
         run: git lfs ls-files -l | cut -d' ' -f1 | sort > .lfs-assets-id
 
@@ -110,10 +114,6 @@ jobs:
           restore-keys: |
             Library-build-
             Library-
-
-      - name: Updating Git submodules
-        run:
-          git submodule init && git submodule update
 
       - name: List Project Structure
         run:
